@@ -25559,7 +25559,7 @@
             },
             "currentRange": "DT",
             "data": {
-              "name": "Due Tasks",
+              "name": "Total Drivers",
               "count": {
                 "DY": 21,
                 "DT": 25,
@@ -25577,9 +25577,9 @@
             "detail": "You can show some detailed information about this widget in here."
           },
           "overdue": {
-            "title": "Overdue",
+            "title": "Issues",
             "data": {
-              "name": "Tasks",
+              "name": "Stopped Driver",
               "count": 4,
               "extra": {
                 "name": "Yesterday's overdue",
@@ -25589,9 +25589,9 @@
             "detail": "You can show some detailed information about this widget in here."
           },
           "issues": {
-            "title": "Issues",
+            "title": "Warning",
             "data": {
-              "name": "Open",
+              "name": "Driver Resting",
               "count": 32,
               "extra": {
                 "name": "Closed today",
@@ -25603,7 +25603,7 @@
           "features": {
             "title": "Features",
             "data": {
-              "name": "Proposals",
+              "name": "Working",
               "count": 42,
               "extra": {
                 "name": "Implemented",
@@ -25612,6 +25612,31 @@
             },
             "detail": "You can show some detailed information about this widget in here."
           },
+          "AverageDistanceDriven": {
+            "chart": {
+            "title": "Avg Distance Driven",
+            "distance": "897.0 mi",
+            "y": "Vechiles",
+            "x":"Miles",
+            "labels": [
+              "500",
+              "1000",
+              "1500",
+              "2000",
+              "2500",
+              "3000",
+              "3500"
+            ],
+            "data": [
+              "50","20","17","30","10","5","7"
+            ]
+          },
+          "summery":{
+            "Title": ["Top Vechiles", "Miles"],
+            "Top Vechiles":["abc","xyz","123"],
+            "Miles":["3250.4 mi","2952 mi","2859.5 mi"]
+          }
+        },
           "githubIssues": {
             "overview": {
               "this-week": {
@@ -26042,6 +26067,7 @@
       },
       "analytics_dashboard_widgets": {
         "value": {
+          
           "visitors": {
             "ranges": {
               "this-year": "This Year",

@@ -18,7 +18,7 @@ const navigationConfig = [
     children: [
       {
         id: 'dashboards.project',
-        title: 'Project',
+        title: 'Fleet',
         type: 'item',
         icon: 'heroicons-outline:clipboard-check',
         url: '/dashboards/project',

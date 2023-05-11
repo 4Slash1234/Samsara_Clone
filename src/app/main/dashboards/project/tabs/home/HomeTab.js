@@ -6,6 +6,7 @@ import FeaturesWidget from './widgets/FeaturesWidget';
 import GithubIssuesWidget from './widgets/GithubIssuesWidget';
 import TaskDistributionWidget from './widgets/TaskDistributionWidget';
 import ScheduleWidget from './widgets/ScheduleWidget';
+import DrivenDistance from './widgets/DrivenDistance';
 
 function HomeTab() {
   const container = {
@@ -32,13 +33,16 @@ function HomeTab() {
         <SummaryWidget />
       </motion.div>
       <motion.div variants={item}>
-        <OverdueWidget />
+        <FeaturesWidget />
       </motion.div>
       <motion.div variants={item}>
         <IssuesWidget />
       </motion.div>
       <motion.div variants={item}>
-        <FeaturesWidget />
+        <OverdueWidget />
+      </motion.div>
+      <motion.div variants={item} className="sm:col-span-4 md:col-span-4 lg:col-span-4 w-1/2">
+        <DrivenDistance/>
       </motion.div>
       <motion.div variants={item} className="sm:col-span-2 md:col-span-4">
         <GithubIssuesWidget />
