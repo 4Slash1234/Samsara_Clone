@@ -41,7 +41,7 @@ function HomeTab() {
       <motion.div variants={item}>
         <OverdueWidget />
       </motion.div>
-      <motion.div variants={item} className="sm:col-span-4 md:col-span-4 lg:col-span-4 w-1/2">
+      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
         <DrivenDistance/>
       </motion.div>
       <motion.div variants={item} className="sm:col-span-2 md:col-span-4">

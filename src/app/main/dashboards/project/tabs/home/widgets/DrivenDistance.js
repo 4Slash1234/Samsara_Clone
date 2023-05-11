@@ -14,83 +14,106 @@ function GithubIssuesWidget() {
   const [awaitRender, setAwaitRender] = useState(true);
   const [tabValue, setTabValue] = useState(0);
   const widgets = useSelector(selectWidgets);
-  const { overview, series, ranges, labels } = widgets?.githubIssues;
-  const currentRange = Object.keys(ranges)[tabValue];
+//   const { series, ranges, labels } = widgets?.githubIssues;
+  const { charts , labels } = widgets?.AverageDistanceDriven;
+//   const currentRange = Object.keys(ranges)[tabValue];
 
-  const chartOptions = {
-    chart: {
-      fontFamily: 'inherit',
-      foreColor: 'inherit',
-      height: '100%',
-      type: 'line',
-      toolbar: {
-        show: false,
-      },
-      zoom: {
-        enabled: false,
-      },
-    },
-    colors: [theme.palette.primary.main, theme.palette.secondary.main],
-    labels,
-    dataLabels: {
-      enabled: true,
-      enabledOnSeries: [0],
-      background: {
-        borderWidth: 0,
-      },
-    },
-    grid: {
-      borderColor: theme.palette.divider,
-    },
-    legend: {
-      show: false,
-    },
-    plotOptions: {
-      bar: {
-        columnWidth: '50%',
-      },
-    },
-    states: {
-      hover: {
-        filter: {
-          type: 'darken',
-          value: 0.75,
-        },
-      },
-    },
-    stroke: {
-      width: [3, 0],
-    },
-    tooltip: {
-      followCursor: true,
-      theme: theme.palette.mode,
-    },
-    xaxis: {
-      axisBorder: {
-        show: false,
-      },
-      axisTicks: {
-        color: theme.palette.divider,
-      },
-      labels: {
-        style: {
-          colors: theme.palette.text.secondary,
-        },
-      },
-      tooltip: {
-        enabled: false,
-      },
-    },
-    yaxis: {
-      labels: {
-        offsetX: -16,
-        style: {
-          colors: theme.palette.text.secondary,
-        },
-      },
-    },
-  };
+//   const chartOptions = {
+//     chart: {
+//       fontFamily: 'inherit',
+//       foreColor: 'inherit',
+//       height: '100%',
+//       type: 'line',
+//       toolbar: {
+//         show: false,
+//       },
+//       zoom: {
+//         enabled: false,
+//       },
+//     },
+//     colors: [theme.palette.primary.main, theme.palette.secondary.main],
+//     labels,
+//     dataLabels: {
+//       enabled: true,
+//       enabledOnSeries: [0],
+//       background: {
+//         borderWidth: 0,
+//       },
+//     },
+//     grid: {
+//       borderColor: theme.palette.divider,
+//     },
+//     legend: {
+//       show: false,
+//     },
+//     plotOptions: {
+//       bar: {
+//         columnWidth: '50%',
+//       },
+//     },
+//     states: {
+//       hover: {
+//         filter: {
+//           type: 'darken',
+//           value: 0.75,
+//         },
+//       },
+//     },
+//     stroke: {
+//       width: [3, 0],
+//     },
+//     tooltip: {
+//       followCursor: true,
+//       theme: theme.palette.mode,
+//     },
+//     xaxis: {
+//       axisBorder: {
+//         show: false,
+//       },
+//       axisTicks: {
+//         color: theme.palette.divider,
+//       },
+//       labels: {
+//         style: {
+//           colors: theme.palette.text.secondary,
+//         },
+//       },
+//       tooltip: {
+//         enabled: false,
+//       },
+//     },
+//     yaxis: {
+//       labels: {
+//         offsetX: -16,
+//         style: {
+//           colors: theme.palette.text.secondary,
+//         },
+//       },
+//     },
+//   };
 
+    const chartOptions = {
+        // chart: {
+        //   id: "basic-bar",
+        // },
+        xaxis: {
+          categories: charts.labels
+        },
+        sparkline: {
+            enabled: false
+          },
+          toolbar: { show: false, },
+          dataLabels: {
+            enabled: false
+          },
+          legend: {
+              show: false,
+          },
+      }
+      const chartSeries = [{
+        name: "series-2",
+          data: charts.data
+      }]
   useEffect(() => {
     setAwaitRender(false);
   }, []);
@@ -145,7 +168,7 @@ function GithubIssuesWidget() {
             <ReactApexChart
               className="flex-auto w-full"
               options={chartOptions}
-              series={series[currentRange]}
+              series={chartSeries}
               height={320}
             />
           </div>
