@@ -224,7 +224,23 @@ function GithubIssuesWidget() {
             </Box>
           </div>
         </div>
+        
       </div>
+      <div className="grid grid-cols-3 py-12" >
+      <div className="flex items-center">
+        <Box
+          className="flex-0 w-8 h-8 rounded-full"
+          
+        />
+        <Typography className="ml-12 truncate">Label</Typography>
+      </div>
+      <Typography className="font-medium text-right">
+        10:00
+      </Typography>
+      <Typography className="text-right" color="text.secondary">
+       20%
+      </Typography>
+    </div>
     </Paper>
   );
 }

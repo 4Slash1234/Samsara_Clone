@@ -7,7 +7,9 @@ import { memo, useEffect, useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
 import Box from '@mui/material/Box';
 import { useSelector } from 'react-redux';
+import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
 import { selectWidgets } from '../../../store/widgetsSlice';
+import { Button } from '@mui/material';
 
 function GithubIssuesWidget() {
   const theme = useTheme();
@@ -226,6 +228,29 @@ function GithubIssuesWidget() {
           </div>
         </div> */}
       </div>
+      <div className="grid grid-cols-3 py-12" style={{justifyContent:"center"}}>
+      <div className="flex items-center" style={{justifyContent:"center"}}>
+        <Box
+          className="flex-0 w-8 h-8 rounded-full"
+          sx={{backgroundColor:"blue"}}
+        />
+        <Typography className="ml-12 truncate">Label</Typography>
+      </div>
+      <Typography className="font-medium text-center">
+        10:00
+      </Typography>
+      <Typography className="text-center" color="text.secondary">
+       20%
+      </Typography>
+    </div>
+    <Button
+           sx={{width:"40%",left:"60%"}}
+            variant="contained"
+            color="primary"
+            startIcon={<FuseSvgIcon size={20}>heroicons-solid:cog</FuseSvgIcon>}
+          >
+            More Details
+          </Button>
     </Paper>
   );
 }
