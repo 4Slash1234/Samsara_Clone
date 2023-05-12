@@ -7,6 +7,7 @@ import GithubIssuesWidget from './widgets/GithubIssuesWidget';
 import TaskDistributionWidget from './widgets/TaskDistributionWidget';
 import ScheduleWidget from './widgets/ScheduleWidget';
 import DrivenDistance from './widgets/DrivenDistance';
+import AvgHour from './widgets/AvgHour';
 
 function HomeTab() {
   const container = {
@@ -43,6 +44,9 @@ function HomeTab() {
       </motion.div>
       <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
         <DrivenDistance/>
+      </motion.div>
+      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+        <AvgHour/>
       </motion.div>
       <motion.div variants={item} className="sm:col-span-2 md:col-span-4">
         <GithubIssuesWidget />

@@ -16,9 +16,8 @@ function GithubIssuesWidget() {
   const [awaitRender, setAwaitRender] = useState(true);
   const [tabValue, setTabValue] = useState(0);
   const widgets = useSelector(selectWidgets);
-  const { charts, summery} = widgets?.AverageDistanceDriven;
-  const {labels} = charts;
-  console.log(charts);
+  const { overview, series, ranges, labels } = widgets?.githubIssues;
+  const currentRange = Object.keys(ranges)[tabValue];
 
   const chartOptions = {
     chart: {
@@ -218,13 +217,13 @@ function GithubIssuesWidget() {
       <div className="grid grid-cols-1 sm:grid-col-2 lg:grid-cols-1 grid-flow-row gap-24 w-full mt-32 sm:mt-16">
         <div className="flex flex-col flex-auto">
           <Typography className="font-large text-center" color="text.secondary">
-            {}
+            New vs. Closed
           </Typography>
           <div className="flex flex-col flex-auto">
             <ReactApexChart
               className="flex-auto w-full"
               options={chartOptions}
-              series={charts.data}
+              series={series[currentRange]}
               height={320}
             />
           </div>
