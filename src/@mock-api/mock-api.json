@@ -25559,6 +25559,7 @@
             },
             "currentRange": "DT",
             "data": {
+              "title":"Total",
               "name": "Total Drivers",
               "count": {
                 "DY": 21,
@@ -25588,6 +25589,7 @@
             },
             "detail": "You can show some detailed information about this widget in here."
           },
+
           "issues": {
             "title": "Warning",
             "data": {
@@ -25601,7 +25603,7 @@
             "detail": "You can show some detailed information about this widget in here."
           },
           "features": {
-            "title": "Features",
+            "title": "Active",
             "data": {
               "name": "Working",
               "count": 42,
