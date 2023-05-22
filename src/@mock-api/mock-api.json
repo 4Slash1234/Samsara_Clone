@@ -25638,7 +25638,31 @@
             "Top Vechiles":["abc","xyz","123"],
             "Miles":["3250.4 mi","2952 mi","2859.5 mi"]
           }
+        }, "AverageHoursDriven": {
+          "charts": {
+          "title": "Avg Hours Driven",
+          "distance": "897.0 mi",
+          "y": "Vechiles",
+          "x":"Miles",
+          "labels": [
+            500,
+            1000,
+            1500,
+            2000,
+            2500,
+            3000,
+            3500
+          ],
+          "data": [
+            50,20,17,30,10,5,7
+          ]
         },
+        "summery":{
+          "Title": ["Top Vechiles", "Miles"],
+          "Top Vechiles":["abc","xyz","123"],
+          "Miles":["3250.4 mi","2952 mi","2859.5 mi"]
+        }
+      },
           "githubIssues": {
             "overview": {
               "this-week": {
