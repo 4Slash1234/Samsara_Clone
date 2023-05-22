@@ -16,9 +16,9 @@ function GithubIssuesWidget() {
   const [awaitRender, setAwaitRender] = useState(true);
   const [tabValue, setTabValue] = useState(0);
   const widgets = useSelector(selectWidgets);
-  const { charts, summery} = widgets?.AverageDistanceDriven;
-  const {labels} = charts;
-  console.log(charts);
+  const { charts, series,ranges,labels} = widgets?.AverageDistanceDriven;
+  const currentRange = Object.keys(ranges)[tabValue];
+  console.log("hihi",charts.data);
 
   const chartOptions = {
     chart: {
@@ -224,7 +224,7 @@ function GithubIssuesWidget() {
             <ReactApexChart
               className="flex-auto w-full"
               options={chartOptions}
-              series={charts.data}
+              series={series[currentRange]}
               height={320}
             />
           </div>
@@ -305,7 +305,7 @@ function GithubIssuesWidget() {
           </div>
         </div> */}
       </div>
-      <div className="grid grid-cols-3 py-12" style={{justifyContent:"center"}}>
+      <div className="grid grid-cols-3 my-12" style={{justifyContent:"center"}}>
       <div className="flex items-center" style={{justifyContent:"center"}}>
         <Box
           className="flex-0 w-8 h-8 rounded-full"
@@ -353,8 +353,7 @@ function GithubIssuesWidget() {
     <Button
            sx={{width:"40%",left:"60%"}}
             variant="contained"
-            color="secondary"
-            startIcon={<FuseSvgIcon size={20}>heroicons-solid:cog</FuseSvgIcon>}
+            color="secondary"     
           >
             More Details
           </Button>

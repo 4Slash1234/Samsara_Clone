@@ -18,7 +18,7 @@ function GithubIssuesWidget() {
   const widgets = useSelector(selectWidgets);
   const { overview, series, ranges, labels } = widgets?.githubIssues;
   const currentRange = Object.keys(ranges)[tabValue];
-
+console.log("githubIssue",currentRange)
   const chartOptions = {
     chart: {
       fontFamily: 'inherit',
@@ -181,7 +181,7 @@ function GithubIssuesWidget() {
     <Paper className="flex flex-col flex-auto p-24 shadow rounded-2xl overflow-hidden w-full">
       <div className="flex flex-col sm:flex-row items-start justify-between w-full">
         <Typography className="text-lg font-medium tracking-tight leading-6 truncate">
-          Avg Distance Driven
+          Avg Hour Driven
         </Typography>
         {/* <div className="mt-12 sm:mt-0 sm:ml-8">
           <Tabs
@@ -216,9 +216,7 @@ function GithubIssuesWidget() {
         {/* chart */}
       <div className="grid grid-cols-1 sm:grid-col-2 lg:grid-cols-1 grid-flow-row gap-24 w-full mt-32 sm:mt-16">
         <div className="flex flex-col flex-auto">
-          <Typography className="font-large text-center" color="text.secondary">
-            New vs. Closed
-          </Typography>
+         
           <div className="flex flex-col flex-auto">
             <ReactApexChart
               className="flex-auto w-full"

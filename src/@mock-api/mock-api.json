@@ -25615,6 +25615,77 @@
             "detail": "You can show some detailed information about this widget in here."
           },
           "AverageDistanceDriven": {
+            "labels": [
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thu",
+              "Fri",
+              "Sat",
+              "Sun"
+            ],
+            "ranges": {
+              "this-week": "This Week",
+              "last-week": "Last Week"
+            },
+            "series": {
+              "this-week": [
+                {
+                  "name": "New issues",
+                  "type": "line",
+                  "data": [
+                    82,
+                    28,
+                    43,
+                    54,
+                    90,
+                    15,
+                    22
+                  ]
+                },
+                {
+                  "name": "Closed issues",
+                  "type": "column",
+                  "data": [
+                    11,
+                    10,
+                    8,
+                    11,
+                    8,
+                    10,
+                    17
+                  ]
+                }
+              ],
+              "last-week": [
+                {
+                  "name": "New issues",
+                  "type": "line",
+                  "data": [
+                    37,
+                    32,
+                    39,
+                    27,
+                    18,
+                    24,
+                    20
+                  ]
+                },
+                {
+                  "name": "Closed issues",
+                  "type": "column",
+                  "data": [
+                    9,
+                    8,
+                    10,
+                    12,
+                    7,
+                    11,
+                    15
+                  ]
+                }
+              ]
+            },
             "charts": {
             "title": "Avg Distance Driven",
             "distance": "897.0 mi",
