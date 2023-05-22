@@ -13,10 +13,10 @@ function ProgressBar() {
             </div>
             <div className="flex-auto leading-none">
               <Typography className="text-17 font-medium" color="text.secondary">
-                LifeTime Usage {'>'} 100,000 mi
+                Max Daily Range {'>'} 300 mi
               </Typography>
               <Typography className="text-12 font-medium" color="text.secondary">
-                Upper end of average vehicle lifespan
+                Charged in 6hrs by a lvel 2 charger
               </Typography>
              
             </div>
@@ -30,10 +30,10 @@ function ProgressBar() {
             </div>
             <div className="flex-auto leading-none">
             <Typography className="text-17 font-medium" color="text.secondary">
-            Avg daily usage {'<'} 200 mi
+            Avg Fuel Efficency {'<'} 25 MPG
           </Typography>
           <Typography className="text-12 font-medium" color="text.secondary">
-            UCharged in 6hr by a level 2 charger
+            Potential for significant efficency gains
           </Typography>
               
             </div>
@@ -47,10 +47,10 @@ function ProgressBar() {
             </div>
             <div className="flex-auto leading-none">
             <Typography className="text-17 font-medium" color="text.secondary">
-            Est annual fuel savings {'>'} $10,000 
+            Est Emmision Saved {'>'} 200 lb 
           </Typography>
           <Typography className="text-12 font-medium" color="text.secondary">
-            potential for significant COST reduction
+            potential for significant sustainiblity impact
           </Typography>
               
             </div>

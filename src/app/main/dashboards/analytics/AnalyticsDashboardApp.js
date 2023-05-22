@@ -19,6 +19,8 @@ import LanguageWidget from './widgets/LanguageWidget';
 import GenderWidget from './widgets/GenderWidget';
 import SummarySection from './widgets/SummarySection';
 import ProgressBar from './widgets/ProgressBar';
+import RemainingCriteria from './widgets/RemainingCriteria';
+import TransictionTable from './widgets/TransictionTable';
 
 function AnalyticsDashboardApp() {
   const dispatch = useDispatch();
@@ -55,55 +57,27 @@ function AnalyticsDashboardApp() {
                   initial="hidden"
                   animate="show"
                 >
+                 
                 <motion.div variants={item} className="sm:col-span-2 lg:col-span-1">
                     <SummarySection />
                   </motion.div>
-                 <motion.div variants={item} className="sm:col-span-2 lg:col-span-1">
-                    <ProgressBar />
+                 <motion.div variants={item} className="sm:col-span-2 lg:col-span-2 flex flex-row gap-20">
+                 
+                 <ProgressBar />
+                    <RemainingCriteria />
                   </motion.div>
-                  <motion.div variants={item} className="sm:col-span-2 lg:col-span-3">
-                    <VisitorsOverviewWidget />
-                  </motion.div>
-
-                  <motion.div variants={item} className="sm:col-span-2 lg:col-span-1 ">
-                    <ConversionsWidget />
-                  </motion.div>
-
-                  <motion.div variants={item} className="sm:col-span-2 lg:col-span-1 ">
-                    <ImpressionsWidget />
-                  </motion.div>
-
-                  <motion.div variants={item} className="sm:col-span-2 lg:col-span-1 ">
-                    <VisitsWidget />
-                  </motion.div>
-
-                  <motion.div variants={item} className="sm:col-span-2 lg:col-span-3">
-                    <VisitorsVsPageViewsWidget />
-                  </motion.div>
+                  
+                 
 
                   <div className="w-full mt-16 sm:col-span-3">
-                    <Typography className="text-2xl font-semibold tracking-tight leading-6">
-                      Your Audience
-                    </Typography>
-                    <Typography className="font-medium tracking-tight" color="text.secondary">
-                      Demographic properties of your users
+                    <Typography className="text-3xl font-semibold tracking-tight leading-6">
+                      Details 
                     </Typography>
                   </div>
-
-                  <div className="sm:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-32 w-full">
-                    <motion.div variants={item} className="">
-                      <NewVsReturningWidget />
-                    </motion.div>
-                    <motion.div variants={item} className="">
-                      <GenderWidget />
-                    </motion.div>
-                    <motion.div variants={item} className="">
-                      <AgeWidget />
-                    </motion.div>
-                    <motion.div variants={item} className="">
-                      <LanguageWidget />
-                    </motion.div>
-                  </div>
+                  <motion.div variants={item} className="sm:col-span-2 lg:col-span-4">
+                    <TransictionTable />
+                  </motion.div>
+                  
                 </motion.div>
               )
             );
