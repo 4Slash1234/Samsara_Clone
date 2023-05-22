@@ -17,6 +17,8 @@ import NewVsReturningWidget from './widgets/NewVsReturningWidget';
 import AgeWidget from './widgets/AgeWidget';
 import LanguageWidget from './widgets/LanguageWidget';
 import GenderWidget from './widgets/GenderWidget';
+import SummarySection from './widgets/SummarySection';
+import ProgressBar from './widgets/ProgressBar';
 
 function AnalyticsDashboardApp() {
   const dispatch = useDispatch();
@@ -53,6 +55,12 @@ function AnalyticsDashboardApp() {
                   initial="hidden"
                   animate="show"
                 >
+                <motion.div variants={item} className="sm:col-span-2 lg:col-span-1">
+                    <SummarySection />
+                  </motion.div>
+                 <motion.div variants={item} className="sm:col-span-2 lg:col-span-1">
+                    <ProgressBar />
+                  </motion.div>
                   <motion.div variants={item} className="sm:col-span-2 lg:col-span-3">
                     <VisitorsOverviewWidget />
                   </motion.div>
