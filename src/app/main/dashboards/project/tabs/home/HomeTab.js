@@ -8,6 +8,10 @@ import TaskDistributionWidget from './widgets/TaskDistributionWidget';
 import ScheduleWidget from './widgets/ScheduleWidget';
 import DrivenDistance from './widgets/DrivenDistance';
 import AvgHour from './widgets/AvgHour';
+import FuelUsedVsWasted from './widgets/FuelUsedVsWasted';
+import AvgViolation from './widgets/AvgViolation';
+import FuelEfficency from './widgets/FuelEfficency';
+import IdleHours from './widgets/IdleHours';
 
 function HomeTab() {
   const container = {
@@ -48,13 +52,25 @@ function HomeTab() {
       <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
         <AvgHour/>
       </motion.div>
-      <motion.div variants={item} className="sm:col-span-2 md:col-span-4">
+      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+        <FuelUsedVsWasted/>
+      </motion.div>
+      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+        <AvgViolation/>
+      </motion.div>
+      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+        <FuelEfficency/>
+      </motion.div>
+      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+        <IdleHours/>
+      </motion.div>
+      {/* <motion.div variants={item} className="sm:col-span-2 md:col-span-4">
         <GithubIssuesWidget />
-      </motion.div>
-      <motion.div variants={item} className="sm:col-span-2 md:col-span-4 lg:col-span-2">
+      </motion.div> */}
+      {/* <motion.div variants={item} className="sm:col-span-2 md:col-span-4 lg:col-span-2">
         <TaskDistributionWidget />
-      </motion.div>
-      <motion.div variants={item} className="sm:col-span-2 md:col-span-4 lg:col-span-2">
+      </motion.div> */}
+      <motion.div variants={item} className="sm:col-span-4 md:col-span-4 lg:col-span-4">
         <ScheduleWidget />
       </motion.div>
     </motion.div>

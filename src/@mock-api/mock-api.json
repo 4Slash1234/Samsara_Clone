@@ -25709,6 +25709,30 @@
             "Top Vechiles":["abc","xyz","123"],
             "Miles":["3250.4 mi","2952 mi","2859.5 mi"]
           }
+        },"FuelUsedVsWasted": {
+          "series": [
+            80,
+            20,
+            0
+          ],
+          "uniqueVisitors": 46085,
+          "labels": [
+            "Fuel used driving",
+            "Fuel used wasted",
+            "Fuel not used"
+          ]
+        },"AvgViolation": {
+          "series": [
+            20,
+            20,
+            60
+          ],
+          "uniqueVisitors": 46085,
+          "labels": [
+            ">5 violation",
+            "1-5 violation",
+            "No violation"
+          ]
         }, "AverageHoursDriven": {
           "charts": {
           "title": "Avg Hours Driven",
