@@ -63,7 +63,7 @@ const navigationConfig = [
       },
       {
         id: 'dashboards.analytics',
-        title: 'Analytics',
+        title: 'Fleet Electrification',
         type: 'item',
         icon: 'heroicons-outline:chart-pie',
         url: '/dashboards/analytics',
