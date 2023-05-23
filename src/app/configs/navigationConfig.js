@@ -9,6 +9,44 @@ i18next.addResourceBundle('ar', 'navigation', ar);
 
 const navigationConfig = [
   {
+    id: 'summery',
+    title: 'Summery',
+    subtitle: 'Complete Details of Fleet',
+    type: 'group',
+    icon: 'heroicons-outline:home',
+    translate: 'Summery',
+    children: [
+      {
+      id: 'dashboards.project',
+      title: 'Fleet',
+      type: 'item',
+      icon: 'heroicons-outline:clipboard-check',
+      url: '/dashboards/project',
+    },
+      {
+        id: 'summery.fleetElectrification',
+        title: 'Fleet Electrification',
+        type: 'item',
+        icon: 'heroicons-outline:clipboard-check',
+        url: '/dashboards/analytics',
+      },
+      {
+        id: 'summery.maintainanceStatus',
+        title: 'Mantainance Status',
+        type: 'item',
+        icon: 'heroicons-outline:chart-pie',
+        url: '/dashboards/analytics',
+      },
+      {
+        id: 'summery.driverReport',
+        title: 'Driver Report',
+        type: 'item',
+        icon: 'heroicons-outline:chart-pie',
+        url: '/dashboards/analytics',
+      },
+    ],
+  },
+  {
     id: 'dashboards',
     title: 'Dashboards',
     subtitle: 'Unique dashboard designs',
@@ -45,14 +83,6 @@ const navigationConfig = [
         url: '/dashboards/crypto',
       },
     ],
-  },
-  {
-    id: 'example-component',
-    title: 'Example',
-    translate: 'EXAMPLE',
-    type: 'item',
-    icon: 'heroicons-outline:star',
-    url: 'example',
   },
 ];
 
