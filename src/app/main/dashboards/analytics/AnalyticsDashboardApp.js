@@ -58,10 +58,10 @@ function AnalyticsDashboardApp() {
                   animate="show"
                 >
                  
-                <motion.div variants={item} className="sm:col-span-2 lg:col-span-1">
+                <motion.div variants={item} className="sm:col-span-2 lg:col-span-1" style={{display:"flex",justifyContent:"center"}}>
                     <SummarySection />
                   </motion.div>
-                 <motion.div variants={item} className="sm:col-span-2 lg:col-span-2 flex flex-row gap-20">
+                 <motion.div variants={item} className="sm:col-span-2 lg:col-span-2 flex flex-row gap-20" style={{alignItems:"center",justifyContent:"center"}}>
                  
                  <ProgressBar />
                     <RemainingCriteria />

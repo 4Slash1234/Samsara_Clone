@@ -71,6 +71,33 @@ function RecentTransactionsWidget(props) {
                         </TableCell>
                       );
                     }
+                    case 'dailyRange': {
+                      return (
+                        <TableCell key={key} component="th" scope="row">
+                          <Typography className="" color="text.secondary">
+                            {value} mi
+                          </Typography>
+                        </TableCell>
+                      );
+                    }
+                    case 'fuelSaving': {
+                      return (
+                        <TableCell key={key} component="th" scope="row">
+                          <Typography className="" color="text.secondary">
+                            {value}
+                          </Typography>
+                        </TableCell>
+                      );
+                    }
+                    case 'estSaving': {
+                      return (
+                        <TableCell key={key} component="th" scope="row">
+                          <Typography className="" color="text.secondary">
+                            {value} lb
+                          </Typography>
+                        </TableCell>
+                      );
+                    }
                     case 'status': {
                       return (
                         <TableCell key={key} component="th" scope="row">

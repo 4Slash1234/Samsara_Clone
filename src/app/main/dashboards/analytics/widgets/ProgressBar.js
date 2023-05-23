@@ -12,7 +12,7 @@ function ProgressBar() {
               <FuseSvgIcon className="text-current">heroicons-outline:credit-card</FuseSvgIcon>
             </div>
             <div className="flex-auto leading-none">
-              <Typography className="text-17 font-medium" color="text.secondary">
+              <Typography className="text-13 font-medium" color="text.secondary">
                 LifeTime Usage {'>'} 100,000 mi
               </Typography>
               <Typography className="text-12 font-medium" color="text.secondary">
@@ -29,7 +29,7 @@ function ProgressBar() {
               <FuseSvgIcon className="text-current">heroicons-outline:cash</FuseSvgIcon>
             </div>
             <div className="flex-auto leading-none">
-            <Typography className="text-17 font-medium" color="text.secondary">
+            <Typography className="text-13 font-medium" color="text.secondary">
             Avg daily usage {'<'} 200 mi
           </Typography>
           <Typography className="text-12 font-medium" color="text.secondary">
@@ -46,7 +46,7 @@ function ProgressBar() {
               <FuseSvgIcon className="text-current">heroicons-outline:light-bulb</FuseSvgIcon>
             </div>
             <div className="flex-auto leading-none">
-            <Typography className="text-17 font-medium" color="text.secondary">
+            <Typography className="text-13 font-medium" color="text.secondary">
             Est annual fuel savings {'>'} $10,000 
           </Typography>
           <Typography className="text-12 font-medium" color="text.secondary">
