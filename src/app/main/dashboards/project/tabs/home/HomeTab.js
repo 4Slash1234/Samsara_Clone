@@ -29,7 +29,7 @@ function HomeTab() {
 
   return (
     <motion.div
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-24 w-full min-w-0 p-24"
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-24 w-full min-w-0 p-24"
       variants={container}
       initial="hidden"
       animate="show"
@@ -49,7 +49,7 @@ function HomeTab() {
       <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
         <DrivenDistance/>
       </motion.div>
-      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+      <motion.div variants={item} className="sm:col-span-4 md:col-span-2 lg:col-span-2">
         <AvgHour/>
       </motion.div>
       <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
