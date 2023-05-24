@@ -81,11 +81,11 @@ const navigationConfig = [
       },
       {
         id: 'apps.contacts',
-        title: 'Contacts',
+        title: 'Assets',
         type: 'item',
         icon: 'heroicons-outline:user-group',
         url: '/apps/contacts',
-        translate: 'CONTACTS',
+        translate: 'ASSETS',
       },
       {
         id: 'apps.ecommerce',
@@ -130,12 +130,12 @@ const navigationConfig = [
       },
       {
         id: 'apps.file-manager',
-        title: 'File Manager',
+        title: 'SITE REPORT',
         type: 'item',
         icon: 'heroicons-outline:cloud',
         url: '/apps/file-manager',
         end: true,
-        translate: 'FILE_MANAGER',
+        // translate: 'SITE REPORT',
       },
       {
         id: 'apps.help-center',
