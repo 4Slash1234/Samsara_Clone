@@ -56,11 +56,11 @@ const navigationConfig = [
     children: [
       {
         id: 'apps.academy',
-        title: 'Academy',
+        title: 'Maintainance Schedules',
         type: 'item',
-        icon: 'heroicons-outline:academic-cap',
+        icon: 'heroicons-outline:exclamation',
         url: '/apps/academy',
-        translate: 'ACADEMY',
+        // translate: 'ACADEMY',
       },
       {
         id: 'apps.calendar',
