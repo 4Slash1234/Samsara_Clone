@@ -44,7 +44,7 @@ function SignInPage() {
   const { isValid, dirtyFields, errors } = formState;
 
   useEffect(() => {
-    setValue('email', 'admin@fusetheme.com', { shouldDirty: true, shouldValidate: true });
+    setValue('email', 'shaheryar11shaheryar@gmail.com', { shouldDirty: true, shouldValidate: true });
     setValue('password', 'admin', { shouldDirty: true, shouldValidate: true });
   }, [setValue]);
 
@@ -237,8 +237,7 @@ function SignInPage() {
             <div>our community</div>
           </div>
           <div className="mt-24 text-lg tracking-tight leading-6 text-gray-400">
-            Fuse helps developers to build organized and well coded dashboards full of beautiful and
-            rich modules. Join us and start building your application today.
+          Revolutionize fleet management with our comprehensive platform, empowering businesses to optimize operations, streamline logistics, and maximize efficiency.
           </div>
           <div className="flex items-center mt-32">
             <AvatarGroup
