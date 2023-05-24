@@ -9,16 +9,66 @@ import { memo } from 'react';
 import { useSelector } from 'react-redux';
 import format from 'date-fns/format';
 import clsx from 'clsx';
-import Button from '@mui/material/Button';
-import { selectWidgets } from '../store/widgetsSlice';
+import { selectTable } from '../store/widgetsSlice';
+
+
 
 function RecentTransactionsWidget(props) {
-  const widgets = useSelector(selectWidgets);
-  const { columns, rows } = widgets?.recentTransactions;
+//   const widgets = useSelector(selectTable);
+//   console.warn("Recent Transactions",widgets.recentTransactions);
+//   const { columns, rows } = widgets?.recentTransactions;
+
+const columns= [
+    "First Seen",
+    "Last Seen",
+    "Description",
+    "Check Engine Light"
+  ];
+
+ const rows=[
+    {
+      
+      "FirstSeen": "2019-10-07T22:22:37.274Z",
+      "LastSeen": "2019-10-07T22:22:37.274Z",
+      "name": "P013C 02 Sensor Slow Response - Rich to Bank 2",
+      "status": "MIL"
+    },
+    {
+      
+        "FirstSeen": "2019-10-07T22:22:37.274Z",
+        "LastSeen": "2019-10-07T22:22:37.274Z",
+        "name": "P013C 02 Sensor Slow Response - Rich to Bank 2",
+        "status": "MIL"
+      },
+      {
+      
+        "FirstSeen": "2019-10-07T22:22:37.274Z",
+        "LastSeen": "2019-10-07T22:22:37.274Z",
+        "name": "P013C 02 Sensor Slow Response - Rich to Bank 2",
+        "status": "MIL"
+      },
+      {
+      
+        "FirstSeen": "2019-10-07T22:22:37.274Z",
+        "LastSeen": "2019-10-07T22:22:37.274Z",
+        "name": "P013C 02 Sensor Slow Response - Rich to Bank 2",
+        "status": "MIL"
+      },
+      {
+      
+        "FirstSeen": "2019-10-07T22:22:37.274Z",
+        "LastSeen": "2019-10-07T22:22:37.274Z",
+        "name": "P013C 02 Sensor Slow Response - Rich to Bank 2",
+        "status": "MIL"
+      },
+   
+  ]
 
   return (
     <Paper className="flex flex-col flex-auto p-24 shadow rounded-2xl overflow-hidden">
-
+    <Typography className="text-2xl font-semibold  pt-12 px-12" >
+    Fault History
+  </Typography>
       <div className="table-responsive mt-24">
         <Table className="simple w-full min-w-full">
           <TableHead>
@@ -41,16 +91,8 @@ function RecentTransactionsWidget(props) {
               <TableRow key={index}>
                 {Object.entries(row).map(([key, value]) => {
                   switch (key) {
-                    case 'id': {
-                      return (
-                        <TableCell key={key} component="th" scope="row">
-                          <Typography className="" color="text.secondary">
-                            {value}
-                          </Typography>
-                        </TableCell>
-                      );
-                    }
-                    case 'date': {
+                 
+                    case 'FirstSeen': {
                       return (
                         <TableCell key={key} component="th" scope="row">
                           <Typography className="">
@@ -59,14 +101,21 @@ function RecentTransactionsWidget(props) {
                         </TableCell>
                       );
                     }
-                    case 'amount': {
+                    case 'LastSeen': {
+                        return (
+                          <TableCell key={key} component="th" scope="row">
+                            <Typography className="">
+                              {format(new Date(value), 'MMM dd, y')}
+                            </Typography>
+                          </TableCell>
+                        );
+                      }
+                   
+                    case 'name': {
                       return (
                         <TableCell key={key} component="th" scope="row">
-                          <Typography className="">
-                            {value.toLocaleString('en-US', {
-                              style: 'currency',
-                              currency: 'USD',
-                            })}
+                          <Typography className="" color="text.secondary">
+                            {value} 
                           </Typography>
                         </TableCell>
                       );

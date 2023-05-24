@@ -58,36 +58,31 @@ function AccountBalanceWidget(props) {
       <div className="flex flex-col p-24 pb-16">
         <div className="flex items-start justify-between">
           <div className="flex flex-col">
-            <Typography className="mr-16 text-lg font-medium tracking-tight leading-6 truncate">
-              Account Balance
+            <Typography className="mr-16 text-3xl font-medium tracking-tight leading-0 truncate">
+              Time Graph
             </Typography>
             <Typography className="font-medium" color="text.secondary">
-              Monthly balance growth and avg. monthly income
+              It Show Us Engine On Time & Driving Timing 
             </Typography>
           </div>
 
-          <div className="">
-            <Chip size="small" className="font-medium text-sm" label="12 months" />
-          </div>
+       
         </div>
         <div className="flex items-start mt-24 mr-8">
           <div className="flex flex-col">
             <Typography className="font-semibold text-3xl md:text-5xl tracking-tighter">
-              {growRate}%
+              3547 hr 31 m
             </Typography>
             <Typography className="font-medium text-sm leading-none" color="text.secondary">
-              Average Monthly Growth
+              Driving Timing
             </Typography>
           </div>
           <div className="flex flex-col ml-32 md:ml-64">
             <Typography className="font-semibold text-3xl md:text-5xl tracking-tighter">
-              {ami.toLocaleString('en-US', {
-                style: 'currency',
-                currency: 'USD',
-              })}
+            35547 hr 41 m
             </Typography>
             <Typography className="font-medium text-sm leading-none" color="text.secondary">
-              Average Monthly Income
+              Engine On Time
             </Typography>
           </div>
         </div>

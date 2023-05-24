@@ -39,19 +39,19 @@ function CryptoDashboardApp() {
   }, [isMobile]);
 
   return (
-    // <Root
-    //   header={
-    //     <CryptoDashboardAppHeader
-    //       onToggleLeftSidebar={() => setLeftSidebarOpen(!leftSidebarOpen)}
-    //     />
-    //   }
-    //   leftSidebarContent={<CryptoDashboardAppSidebar />}
-    //   leftSidebarOpen={leftSidebarOpen}
-    //   leftSidebarOnClose={() => setLeftSidebarOpen(false)}
-    //   leftSidebarWidth={320}
-    //   content={<CryptoDashboardAppContent />}
-    // />
-    <h1>Mantainanace Status</h1>
+    <Root
+      header={
+        <CryptoDashboardAppHeader
+          onToggleLeftSidebar={() => setLeftSidebarOpen(!leftSidebarOpen)}
+        />
+      }
+      // leftSidebarContent={<CryptoDashboardAppSidebar />}
+      // leftSidebarOpen={leftSidebarOpen}
+      // leftSidebarOnClose={() => setLeftSidebarOpen(false)}
+      // leftSidebarWidth={320}
+      content={<CryptoDashboardAppContent />}
+    />
+    // <h1>Mantainanace Status</h1>
   );
 }
 

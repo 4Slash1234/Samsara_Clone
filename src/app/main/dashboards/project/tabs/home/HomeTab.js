@@ -46,22 +46,22 @@ function HomeTab() {
       <motion.div variants={item}>
         <OverdueWidget />
       </motion.div>
-      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+      <motion.div variants={item} className="sm:col-span-4 md:col-span-2 lg:col-span-2">
         <DrivenDistance/>
       </motion.div>
       <motion.div variants={item} className="sm:col-span-4 md:col-span-2 lg:col-span-2">
         <AvgHour/>
       </motion.div>
-      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+      <motion.div variants={item} className="sm:col-span-4 md:col-span-2 lg:col-span-2">
         <FuelUsedVsWasted/>
       </motion.div>
-      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+      <motion.div variants={item} className="sm:col-span-4 md:col-span-2 lg:col-span-2">
         <AvgViolation/>
       </motion.div>
-      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+      <motion.div variants={item} className="sm:col-span-4 md:col-span-2 lg:col-span-2">
         <FuelEfficency/>
       </motion.div>
-      <motion.div variants={item} className="sm:col-span-2 md:col-span-2 lg:col-span-2">
+      <motion.div variants={item} className="sm:col-span-4 md:col-span-2 lg:col-span-2">
         <IdleHours/>
       </motion.div>
       {/* <motion.div variants={item} className="sm:col-span-2 md:col-span-4">

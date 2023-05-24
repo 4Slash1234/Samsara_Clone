@@ -19,7 +19,8 @@ const widgetsSlice = createSlice({
 });
 
 export const selectWidgets = ({ cryptoDashboardApp }) => cryptoDashboardApp.widgets;
-export const selectPrices = ({ cryptoDashboardApp }) => cryptoDashboardApp.prices;
-export const selectWallets = ({ cryptoDashboardApp }) => cryptoDashboardApp.wallets;
+// export const selectPrices = ({ cryptoDashboardApp }) => cryptoDashboardApp.prices;
+// export const selectWallets = ({ cryptoDashboardApp }) => cryptoDashboardApp.wallets;
+export const selectTable = ({ cryptoDashboardApp }) => cryptoDashboardApp.recentTransactions;
 
 export default widgetsSlice.reducer;

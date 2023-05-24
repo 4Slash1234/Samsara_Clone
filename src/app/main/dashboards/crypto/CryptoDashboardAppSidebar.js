@@ -9,16 +9,16 @@ function CryptoDashboardAppSidebar() {
 
   const { watchlist } = widgets || {};
 
-  return (
-    <>
-      <Paper elevation={0} square>
-        {watchlist?.map((item) => (
-          <WatchlistItem key={item.iso} item={item} />
-        ))}
-      </Paper>
-      <BuySellForm />
-    </>
-  );
+  // return (
+  //   // <>
+  //   //   <Paper elevation={0} square>
+  //   //     {watchlist?.map((item) => (
+  //   //       <WatchlistItem key={item.iso} item={item} />
+  //   //     ))}
+  //   //   </Paper>
+  //   //   <BuySellForm />
+  //   // </>
+  // );
 }
 
 export default CryptoDashboardAppSidebar;

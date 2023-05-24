@@ -97,7 +97,27 @@ function NewVsReturningWidget(props) {
           height={chartOptions.chart.height}
         />
       </div>
-    
+      <div className="mt-32">
+        <div className="-my-12 divide-y">
+          {series.map((dataset, i) => (
+            <div className="grid grid-cols-3 py-12" key={i}>
+              <div className="flex items-center">
+                <Box
+                  className="flex-0 w-8 h-8 rounded-full"
+                  sx={{ backgroundColor: chartOptions.colors[i] }}
+                />
+                <Typography className="ml-12 truncate">{labels[i]}</Typography>
+              </div>
+              <Typography className="font-medium text-right">
+                {((uniqueVisitors * dataset) / 100).toLocaleString('en-US')}
+              </Typography>
+              <Typography className="text-right" color="text.secondary">
+                {dataset}%
+              </Typography>
+            </div>
+          ))}
+        </div>
+      </div>
     </Paper>
   );
 }

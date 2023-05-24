@@ -10,17 +10,17 @@ i18next.addResourceBundle('ar', 'navigation', ar);
 const navigationConfig = [
   {
     id: 'summery',
-    title: 'Summery',
+    title: 'OverView',
     subtitle: 'Complete Details of Fleet',
     type: 'group',
     icon: 'heroicons-outline:home',
-    translate: 'Summery',
+    translate: 'OverView',
     children: [
       {
       id: 'dashboards.project',
       title: 'Fleet',
       type: 'item',
-      icon: 'heroicons-outline:clipboard-check',
+      icon: 'heroicons-outline:home',
       url: '/dashboards/project',
     },
       {
@@ -41,7 +41,7 @@ const navigationConfig = [
         id: 'summery.driverReport',
         title: 'Driver Report',
         type: 'item',
-        icon: 'heroicons-outline:chart-pie',
+        icon: 'heroicons-outline:template',
         url: '/dashboards/finance',
       },
     ],
